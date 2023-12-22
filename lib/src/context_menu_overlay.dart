@@ -72,9 +72,9 @@ class ContextMenuOverlayState extends State<ContextMenuOverlay> {
 
         return _InheritedContextMenuOverlay(
             state: this,
-            child: Scaffold(
-              backgroundColor: Colors.transparent,
-              body: Listener(
+            child: Material(
+              color: Colors.transparent,
+              child: Listener(
                 onPointerDown: (e) => _mousePos = e.localPosition,
                 // Listen for Notifications coming up from the app
                 child: Stack(
